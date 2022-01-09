@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 4</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <table class="table table-sm table-striped table-hover table-dark">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Biography</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <div class="sub-container">
+      <button onclick="showEdit()" class="btn btn-primary">Edit item by id</button>
+      <button onclick="showDelete()" class="btn btn-primary">Delete item by id</button>
+      <div id="place-to-show-edit">
+        <form method="post" class="form-group">
+          <input type="text" class="form-control" name="id" placeholder="ID" id="id" required />
+          <input type="text" class="form-control" name="name" placeholder="Name" id="name" />
+          <input type="text" class="form-control" name="bio" placeholder="Biography" id="bio" />
+          <button class="btn btn-outline-primary form-control" id="change" >Confirm </button>
+        </form>
+      </div>
+      <div id="place-to-show-delete">
+        <form method="post" class="form-group">
+          <input type="text" class="form-control" name="idDelete" placeholder="ID" id="idDelete" required />
+          <button  class="btn btn-outline-primary form-control" id="delete">Delete </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

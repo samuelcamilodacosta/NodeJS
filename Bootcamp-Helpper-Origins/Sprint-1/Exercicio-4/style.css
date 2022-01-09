@@ -1,0 +1,31 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+body {
+  margin: 0px;
+  background: #ccc;
+}
+table{
+  align-items: center;
+}
+.container{
+  margin-top: 20px;
+}
+form input{
+  display: block;
+  margin-top: 10px;
+}
+
+form button{
+  display: block;
+  margin-top: 10px;
+}
+
+#place-to-show-edit{
+  display: none;
+  width: 300px;
+}
+#place-to-show-delete{
+  display: none;
+  width: 300px;
+}
